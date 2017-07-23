@@ -6,7 +6,8 @@ pipeline
  {
   steps
        {
-          echo "Hello World"
+         sh ' echo "Hello World" '
+          sh ' echo "This is from the Development branch" '
        }
        
    }
@@ -15,7 +16,8 @@ pipeline
       {
              steps
                 {
-                   echo "Hello India"
+                  sh ' echo "Hello India" '
+                  sh 'echo "Development branch" '
                  }
        
       }
